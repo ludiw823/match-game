@@ -5,6 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 	<title>MATCH!!</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<h1>Matching Game!</h1>
@@ -13,73 +14,73 @@
 	</div>
 
 	<section class = 'deck'>
-		<div class = 'card'>
+		<div class = 'card' data-name = 'superman'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' id='card1' src = 'img/superman.png' alt='superman'>
 		</div>
 
-		<div class = 'card'>
+		<div class = 'card' data-name = 'superman'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' src = 'img/superman.png' alt='superman'>
 		</div>
-		<div class = 'card'>
+		<div class = 'card' data-name = 'cherry'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' src = 'img/cherry.png' alt='cherry'>
 		</div>
-		<div class = 'card'>
+		<div class = 'card' data-name = 'cherry'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' src = 'img/cherry.png' alt='cherry'>
 		</div>
-		<div class = 'card'>
+		<div class = 'card' data-name = 'cocktail'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
-		</div>
-
-		<div class = 'card'>
-			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
-		</div>
-		<div class = 'card'>
-			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
-		</div>
-		<div class = 'card'>
-			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
-		</div>
-		<div class = 'card'>
-			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' src = 'img/cocktail.png' alt='cocktail'>
 		</div>
 
-		<div class = 'card'>
+		<div class = 'card' data-name = 'cocktail'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' src = 'img/cocktail.png' alt='cocktail'>
 		</div>
-		<div class = 'card'>
+		<div class = 'card' data-name='footprint'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' src = 'img/footprint.png' alt='footprint'>
 		</div>
-		<div class = 'card'>
+		<div class = 'card' data-name='footprint'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' src = 'img/footprint.png' alt='footprint'>
 		</div>
-		<div class = 'card'>
+		<div class = 'card' data-name = 'pagoda'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' src = 'img/pagoda.png' alt='pagoda'>
 		</div>
 
-		<div class = 'card'>
+		<div class = 'card' data-name = 'pagoda'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' src = 'img/pagoda.png' alt='pagoda'>
 		</div>
-		<div class = 'card'>
+		<div class = 'card' data-name='sedan'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' src = 'img/sedan.png' alt='sedan'>
 		</div>
-		<div class = 'card'>
+		<div class = 'card' data-name='sedan'>
 			<img class = 'front' src = 'img/front.png' alt = 'covered'>
-			<img class = 'back' src = 'img/icons8-superman-60.png' alt='superman'>
+			<img class = 'back' src = 'img/sedan.png' alt='sedan'>
+		</div>
+		<div class = 'card' data-name='star'>
+			<img class = 'front' src = 'img/front.png' alt = 'covered'>
+			<img class = 'back' src = 'img/star.png' alt='star'>
+		</div>
+
+		<div class = 'card' data-name= = 'star'>
+			<img class = 'front' src = 'img/front.png' alt = 'covered'>
+			<img class = 'back' src = 'img/star.png' alt='star'>
+		</div>
+		<div class = 'card' data-name = 'unicorn'>
+			<img class = 'front' src = 'img/front.png' alt = 'covered'>
+			<img class = 'back' src = 'img/unicorn.png' alt='unicorn'>
+		</div>
+		<div class = 'card' data-name= 'unicorn'>
+			<img class = 'front' src = 'img/front.png' alt = 'covered'>
+			<img class = 'back' src = 'img/unicorn.png' alt='unicorn'>
 		</div>
 	</section>
 

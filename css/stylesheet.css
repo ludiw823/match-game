@@ -26,24 +26,30 @@ body{
 	flex-wrap: wrap;
 	margin:auto;
 	/*border: 2px solid red;*/
+	perspective:1000px;
+	-webkit-perspective:1000px;
 }
 
 .card {
 	width: calc(25% - 20px);
 	height: calc(25% - 20px);  /*need space for calc function syntax*/
 	position: relative;
-	background-color: #b2bec3;
-	border:10px solid #b2bec3;
 	margin: 10px;
-	border-radius: 10px;
 	box-shadow: 5px 5px 3px #636e72;
-	transition-property: scale(1);
+	/*transition-property: scale(1);*/
+	transform-style: preserve-3d;
+	transition: transform .5s;
 }
 
 /*click transfromation of card*/
 .card:active {
 	transform: scale(0.95);
 	transition: 0.3s;
+}
+
+.card.flip{
+	transform: rotateY(180deg);
+	
 }
 
 .front, .back {
@@ -53,11 +59,23 @@ body{
 	padding: 25px;
 	border: 5px;
 	background-color: #b2bec3;
+	backface-visibility: hidden; 
+	-webkit-backface-visibility: hidden;
 }
 
-.front {
-	z-index: 1;
+
+.back{
+	transform: rotateY(180deg);
 }
+
+.match{
+	background-color: #a29bfe; 	
+}
+
+
+/*.front {
+	z-index: 1;
+}*/
 /*img {
 	width: 100px;
 }*/
