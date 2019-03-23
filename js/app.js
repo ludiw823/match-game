@@ -83,5 +83,10 @@ function shuffleCard(){
 	});
 }
 
-cards.forEach(card => card.addEventListener('click', flipCard));
-shuffleCard();
+
+	cards.forEach(card =>card.addEventListener('click', flipCard));
+	shuffleCard();
+
+	//document.getElementById("btn-new").addEventListener("click", location.reload);
+	
+
